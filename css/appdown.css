@@ -1,0 +1,203 @@
+*,
+::before,
+::after{
+	margin:0;
+	padding: 0;
+	-webkit-tap-highlight-color: transparent;/*清除移动端默认的点击高亮的效果，设置成透明*/
+    box-sizing:border-box ;/*设置所有的盒子都以边框开始计算宽度 */
+   -webkit-box-sizing: border-box;
+} 
+
+body{
+	font-size: 15px;
+	font-family: "microsoft yahei",sans-serif;
+	color: #333333;
+	background:#FFFFFF;
+}
+
+h1{
+	font-size: 16px;
+}
+
+a{
+	color: #333333;
+}
+
+a:hover,
+a:link,
+a:visited{
+	text-decoration: none;
+}
+
+ul,ol{
+	list-style: none;
+}
+
+input{
+	border: none;/*清除input的默认样式*/
+	outline: none;
+	-webkit-appearance: none; 
+}
+
+.f_left{
+	float: left;
+}
+
+.f_right{
+	float: right;
+}
+
+.clearfix::after{
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+.clearfix{
+	zoom: 1;
+}
+
+/*总框架*/
+.rxLayout{
+	width:100%;
+	max-width: 640px;
+	min-width: 300px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+/*软信header部分*/
+.rxHeader{
+	width: 100%;
+	z-index: 999;
+}
+
+.rxHbox{
+	width: 100%;
+	max-width: 640px;
+	min-width: 300px;
+	margin: 0 auto;
+	background:#eb6100;
+	height: 45px;
+	position: relative;
+	color: #FFFFFF;
+	font-size:22px;
+	padding:0 20px;
+	margin-bottom: 5%;
+}
+
+.rxHbox a{
+	width: 10%;
+	position: absolute;
+	top: 20%;
+	left: 5%;
+}
+
+.rxHbox span{
+	width: 100%;
+	position: absolute;
+	top: 20%;
+	left: 45%;
+	
+}
+
+/*软信logo部分*/
+.rxLogo{
+	padding-top: 50px;
+	width: 100%;
+	position: relative;
+}
+
+.logoImg{
+	width:100%;
+	background: url(../img/logo1.png) no-repeat top center;
+	background-size: 25% ;
+}
+.logoImg p:first-child{
+	padding-top: 28%;
+	text-align: center;
+	font-size: 120%;
+	color: rgba(0,0,0,0.87);
+}
+
+.logoImg p:last-child{
+	text-align: center;
+	font-size: 100%;
+	color:rgba(0,0,0,0.87);
+	line-height: 2em;
+}
+
+.rxLetter{
+	width: 100%;
+	position: relative;
+	top: 20px;
+	text-align: center;
+	font-size: 120%;
+	line-height: 0;
+	color: rgba(0,0,0,0.87);
+}
+
+/*轮播图部分*/
+.banner-box{
+	margin-top: 20px;
+	height: 300px;
+}
+/*设置大小*/
+.swiper-container{
+	width: 300px;
+	height: 300px;
+}
+.banner-box img{
+	height: 100%;
+}
+/*下载App部分*/
+
+.rxApp{
+	width: 100%;
+	height: 45px;
+	padding: 10% 20%;
+}
+.rxApp a:first-child,
+.rxApp a:last-child{
+	/*width: 35%;*/
+	padding: 5px 7px;
+	border-radius: 5px;
+	float: left;
+	color: #FFFFFF;
+	background:#179910;
+	background-size: 100%;
+	text-align: center;
+}
+
+.rxApp a:last-child{
+	background:#179910;
+	background-size: 100%;
+	float: right;
+}
+
+/*应用描述部分*/
+.rxdec{
+	width: 100%;
+	position: relative;
+	padding: 10% 1% 10% 5%;
+	font-size: 100%;
+	/*color: rgba(0,0,0,0.5);*/
+	color:silver;
+}
+.rxdec p{
+	width: 100%;
+	font-weight: 600;
+	padding-bottom: 2%;
+}
+.rxtable tr td{
+	font-size: 80%;
+	padding: 1% 0;
+}
+.rxtable tr td:first-child{
+	width: 25%;
+	/*padding-right: 1%;*/
+}
+
+
